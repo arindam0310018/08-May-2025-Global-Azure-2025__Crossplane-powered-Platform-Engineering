@@ -16,9 +16,10 @@ Join me to learn more!
 | --------- | --------- |
 | 1. | Introduction to Crossplane and its key features. |
 | 2. | Visual overview: How Crossplane works. |
-| 3. | Setting up Crossplane with Azure. |
-| 4. | Deploying Azure resources using Crossplane - Command-Line. |
-| 5. | Deploying Azure resources using Crossplane & Github Actions. |
+| 3. | Crossplane Use case. |
+| 4. | Setting up Crossplane with Azure. |
+| 5. | Deploying Azure resources using Crossplane - Command-Line. |
+| 6. | Deploying Azure resources using Crossplane & Github Actions. |
 
 | 01: Introduction to Crossplane and its key features:- |
 | --------- |
@@ -31,6 +32,13 @@ Crossplane is a CNCF project that helps you manage cloud resources in a Kubernet
 With Kubernetes, we used to manage only application, but with Crossplane, we can now manage cloud infrastructure.
 For Ease of understanding, consider like this -
 - With Crossplane, we can write a Kubernetes YAML file, and it will create the desired Cloud Resources (For Example - A Resource Group), directly from Kubernetes cluster.
+
+| Technical Defination:- |
+| --------- |
+
+__Reference Links:-__
+- https://www.crossplane.io/
+- https://docs.crossplane.io/latest/getting-started/introduction/
 
 
 
