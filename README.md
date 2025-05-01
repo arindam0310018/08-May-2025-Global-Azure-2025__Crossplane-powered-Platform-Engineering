@@ -2,9 +2,9 @@
 
 Greetings and Welcome to another amazing Session in __Global Azure 2025 powered by Azure Zurich User Group.__
 
-| <img src="Images/01-Global-Azure.jpg" alt="Global Azure"> |
-| --------- |
-| __<img src="Images/02-Zurich-CH.jpg" alt="Zurich Switzerland">__ |
-| __<Centre><img src="Images/03-AZUG.jpg" alt="Azure Zurich User Group"></Centre>__ |
+| <img src="Images/01-Global-Azure.jpg" alt="Global Azure"> | <img src="Images/03-AZUG.jpg" alt="Azure Zurich User Group"> |
+| --------- | --------- |
+
+
 
 
