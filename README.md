@@ -20,6 +20,11 @@ Join me to learn more!
 | 4. | Deploying Azure resources using Crossplane - Command-Line. |
 | 5. | Deploying Azure resources using Crossplane & Github Actions. |
 
+| Introduction to Crossplane and its key features:- |
+| --------- |
+| <img src="Images/03-Crossplane.jpg" alt="Crossplane"> |
+
+
 
 
 
