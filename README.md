@@ -25,7 +25,7 @@ Join me to learn more!
 | --------- |
 | <img src="Images/03-Crossplane.jpg" alt="Crossplane"> |
 
-| Defination in Simple English:- |
+| Defination:- |
 | --------- |
 
 Crossplane is a CNCF project that helps you manage cloud resources in a Kubernetes-native way. 
