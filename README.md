@@ -33,10 +33,8 @@ With Kubernetes, we used to manage only application, but with Crossplane, we can
 For Ease of understanding, consider like this -
 - With Crossplane, we can write a Kubernetes YAML file, and it will create the desired Cloud Resources (For Example - A Resource Group), directly from Kubernetes cluster.
 
-| Technical Defination:- |
+| Reference Links:- |
 | --------- |
-
-__Reference Links:-__
 - https://www.crossplane.io/
 - https://docs.crossplane.io/latest/getting-started/introduction/
 
