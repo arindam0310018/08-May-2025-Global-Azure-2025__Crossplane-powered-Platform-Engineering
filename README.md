@@ -15,7 +15,7 @@ Join me to learn more!
 | __#__ | __Topics__ |
 | --------- | --------- |
 | 1. | Introduction to Crossplane and its key features. |
-| 2. | Visual overview: How Crossplane works. |
+| 2. | Visual overview: Integration of Crossplane and Azure. |
 | 3. | Crossplane Use case. |
 | 4. | Setting up Crossplane with Azure. |
 | 5. | Deploying Azure resources using Crossplane - Command-Line. |
@@ -38,7 +38,13 @@ For Ease of understanding, consider like this -
 - https://www.crossplane.io/
 - https://docs.crossplane.io/latest/getting-started/introduction/
 
+| Key Features:- |
+| --------- |
 
+
+| 02: Visual overview: Integration of Crossplane and Azure:- |
+| --------- |
+| <img src="Images/04-Crossplane-Azure.jpg" alt="Crossplane-Azure"> |
 
 
 
