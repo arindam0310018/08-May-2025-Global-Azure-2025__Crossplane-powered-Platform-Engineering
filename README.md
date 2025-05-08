@@ -9,6 +9,12 @@ Join me to learn more!
 | <img src="Images/01-Global-Azure.jpg" alt="Global Azure"> | <img src="Images/02-AZUG.jpg" alt="Azure Zurich User Group"> |
 | --------- | --------- |
 
+| __VIRTUAL SESSION:-__ |
+| --------- |
+| __LIVE DEMO__ was Recorded as part of my Presentation in __Global Azure - 2025__ powered by __Azure Zurich User Group__ |
+| Duration of My Demo = __XX Mins XX Secs__ |
+| [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gjPY2RqUjzA/0.jpg)](https://www.youtube.com/watch?v=gjPY2RqUjzA) |
+
 | Agenda:- |
 | --------- |
 
