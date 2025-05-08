@@ -86,6 +86,54 @@ For Ease of understanding, consider like this -
 3. Kubelogin (Installed in your working Notbook/VM)
 4. Helm (Installed in your working Notbook/VM)
 
+| AKS Cluster Details:- |
+| --------- |
+
+Subscription: __Visual Studio Enterprise Subscription__
+Resource group: __AM-CrossPlane-RG__
+Region: __West Europe__
+Kubernetes cluster name: __AM-Crossplane-AKS__
+Kubernetes version: __1.31.7__
+Automatic upgrade: __patch__
+Automatic upgrade scheduler: __Every week on Sunday (recommended)__
+Node security channel type: __NodeImage__
+Security channel scheduler: __Every week on Sunday (recommended)__
+Node pools: __1__
+Enable virtual nodes: __Disabled__
+Resource identity: __System-assigned managed identity__
+Local accounts: __Disabled__
+Authentication and Authorization: __Microsoft Entra ID authentication with Azure RBAC__
+Encryption type: __(Default) Encryption at-rest with a platform-managed key__
+Private cluster: __Disabled__
+Authorized IP ranges: __Disabled__
+Network configuration: __Azure CNI Node Subnet__
+Virtual network: __AM-CrossPlane-AKS-VNet__
+Cluster subnet: __(new) Container-Subnet__
+Kubernetes service address range: __10.0.0.0/16__
+Kubernetes DNS service IP address: __10.0.0.10__
+DNS name prefix: __AM-Crossplane-AKS-dns__
+Network policy: __Azure__
+Load balancer: __Standard__
+Integrations: __Container registry__ 
+resource group: __AM-CrossPlane-RG__
+Container registry location: __West Europe__
+Container registry admin user: __Enabled__
+Container registry SKU: __Standard__
+Container registry: __(new) AMCrossPlaneACR__
+Service mesh: __Disabled__
+Azure Policy: __Disabled__
+Enable Container Logs: __Disabled__
+Enable Prometheus metrics: __Enabled__
+Azure Monitor workspace: __(new) AM-Azure-Monitor-Workspace-WEU__
+Enable Grafana: __Disabled__
+Alert rules: __2 rules__
+Infrastructure resource group: __AM-CrossPlane-RG_AM-Crossplane-AKS_WestEurope__
+Microsoft Defender for Cloud: __Free__
+OpenID Connect (OIDC): __Enabled__
+Workload Identity: __Enabled__
+Image Cleaner: __Enabled__
+Tags: __None__
+
 
 | 05: Deploying Azure resources using Crossplane:- |
 | --------- |
