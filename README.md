@@ -19,6 +19,7 @@ Join me to learn more!
 | 3. | Crossplane Use case. |
 | 4. | Setting up Crossplane with Azure. |
 | 5. | Deploying Azure resources using Crossplane - Command-Line. |
+| 6. | Delete Azure resources using Crossplane - Command-Line. |
 
 | 01: Introduction to Crossplane and its key features:- |
 | --------- |
@@ -795,6 +796,16 @@ __Resource group "am-100" was successfully created.__
 
 | <img src="Images/10-Crossplane-rg.jpg" alt="Crossplane-rg"> |
 | --------- |
+
+| 06: Delete Azure resources using Crossplane - Command-Line:- |
+| --------- |
+
+> kubectl delete resourcegroup.azure.upbound.io am-100
+```
+PS C:\Users\amadmin\Desktop\Crossplane> kubectl delete resourcegroup.azure.upbound.io am-100
+resourcegroup.azure.upbound.io "am-100" deleted
+PS C:\Users\amadmin\Desktop\Crossplane>
+```
 
 __Hope You Enjoyed the Session!!!__
 
