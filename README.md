@@ -14,7 +14,7 @@ Join me to learn more!
 
 | __#__ | __Topics__ |
 | --------- | --------- |
-| 1. | Introduction to Crossplane and its key feature. |
+| 1. | Introduction to Crossplane and its key features. |
 | 2. | Visual overview: Integration of Crossplane and Azure. |
 | 3. | Crossplane Use case. |
 | 4. | Setting up Crossplane with Azure. |
@@ -39,7 +39,7 @@ For Ease of understanding, consider like this -
 
 | Key Features:- |
 | --------- |
-
+| <img src="Images/05-Crossplane-Components.jpg" alt="Crossplane-Components"> |
 
 | 02: Visual overview: Integration of Crossplane and Azure:- |
 | --------- |
@@ -196,19 +196,137 @@ PS C:\Users\amadmin>
 
 II. __Install kubelogin on Windows.__
 
-| Reference Link:  |
+| Reference Link: https://community.chocolatey.org/packages/kubelogin  |
 | --------- |
 
 ```
+choco install kubelogin
+```
+
+| Kubectl Installation Logs:- |
+| --------- |
 
 ```
+PS C:\Users\amadmin> choco install kubelogin
+Chocolatey v2.4.3
+Installing the following packages:
+kubelogin
+By installing, you accept licenses for the packages.
+Downloading package from source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading kubelogin 1.32.4... 100%
+
+kubelogin v1.32.4 [Approved]
+kubelogin package files install completed. Performing other installation steps.
+The package kubelogin wants to run 'chocolateyInstall.ps1'.
+Note: If you don't run this script, the installation will fail.
+Note: To confirm automatically next time, use '-y' or consider:
+choco feature enable -n allowGlobalConfirmation
+Do you want to run the script?([Y]es/[A]ll - yes to all/[N]o/[P]rint): A
+
+Extracting 64-bit C:\ProgramData\chocolatey\lib\kubelogin\tools\kubelogin_windows_amd64.zip to C:\ProgramData\chocolatey\lib\kubelogin\tools...
+C:\ProgramData\chocolatey\lib\kubelogin\tools
+Added C:\ProgramData\chocolatey\bin\kubectl-oidc_login.exe shim pointed to '..\lib\kubelogin\tools\kubelogin.exe'.
+ ShimGen has successfully created a shim for kubelogin.exe
+ The install of kubelogin was successful.
+  Deployed to 'C:\ProgramData\chocolatey\lib\kubelogin\tools'
+
+Chocolatey installed 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+PS C:\Users\amadmin>
+```
+
 
 | Kubelogin ERROR Logs:- |
 | --------- |
 
+__AKS uses kubelogin plugin for authentication.__
+
+> kubelogin convert-kubeconfig -l azurecli
 ```
+PS C:\Users\amadmin> kubelogin convert-kubeconfig -l azurecli
+error: unknown shorthand flag: 'l' in -l
 ```
 
+| Troubleshooting:- |
+| --------- |
+
+Uninstall kubelogin using choco.
+> choco uninstall kubelogin -y
+```
+PS C:\Users\amadmin> choco uninstall kubelogin -y
+Chocolatey v2.4.3
+Uninstalling the following packages:
+kubelogin
+
+kubelogin v1.32.4
+Removing shim C:\ProgramData\chocolatey\bin\kubectl-oidc_login.exe which pointed to ''.
+ Skipping auto uninstaller - No registry snapshot.
+ kubelogin has been successfully uninstalled.
+
+Chocolatey uninstalled 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+PS C:\Users\amadmin>
+```
+
+__Install kubelogin using Azure Github: https://azure.github.io/kubelogin/install.html__
+
+> winget install --id=Microsoft.Azure.Kubelogin  -e
+
+```
+PS C:\Users\amadmin> winget install --id=Microsoft.Azure.Kubelogin  -e
+Found Microsoft Azure Kubelogin [Microsoft.Azure.Kubelogin] Version 0.2.8
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/Azure/kubelogin/releases/download/v0.2.8/kubelogin-win-amd64.zip
+  ██████████████████████████████  23.4 MB / 23.4 MB
+Successfully verified installer hash
+Extracting archive...
+Successfully extracted archive
+Starting package install...
+Command line alias added: "kubelogin"
+Successfully installed
+PS C:\Users\amadmin>
+```
+
+| Validate Post Installation:- |
+| --------- |
+
+> kubelogin --version
+```
+PS C:\Users\amadmin> kubelogin --version
+kubelogin version
+git hash: v0.2.8/d7f1c16c95cc0a1a3beb056374def7b744a38b3a
+Go version: go1.23.7
+Build time: 2025-04-25T17:17:57Z
+Platform: windows/amd64
+PS C:\Users\amadmin>
+```
+
+__Get Credentials:-__
+
+> az aks get-credentials --resource-group AM-CrossPlane-RG --name AM-Crossplane-AKS --overwrite-existing
+
+```
+PS C:\Users\amadmin> az aks get-credentials --resource-group AM-CrossPlane-RG --name AM-Crossplane-AKS --overwrite-existing
+Merged "AM-Crossplane-AKS" as current context in C:\Users\amadmin\.kube\config
+PS C:\Users\amadmin>
+```
+
+__Use kubelogin plugin for authentication:-__
+
+> kubelogin convert-kubeconfig -l azurecli
+```
+PS C:\Users\amadmin> kubelogin convert-kubeconfig -l azurecli
+PS C:\Users\amadmin>
+```
+
+> kubectl get nodes
+```
+PS C:\Users\amadmin> kubectl get nodes
+NAME                                STATUS   ROLES    AGE    VERSION
+aks-agentpool-99335204-vmss000000   Ready    <none>   3h7m   v1.31.7
+PS C:\Users\amadmin>
+```
 
 III. __Install Helm on Windows.__
 
