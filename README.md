@@ -12,7 +12,7 @@ Join me to learn more!
 | __VIRTUAL SESSION:-__ |
 | --------- |
 | __LIVE DEMO__ was Recorded as part of my Presentation in __Global Azure - 2025__ powered by __Azure Zurich User Group__ |
-| Duration of My Demo = __XX Mins XX Secs__ |
+| Duration of My Demo = __51 Mins 16 Secs__ |
 | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gjPY2RqUjzA/0.jpg)](https://www.youtube.com/watch?v=gjPY2RqUjzA) |
 
 | Agenda:- |
