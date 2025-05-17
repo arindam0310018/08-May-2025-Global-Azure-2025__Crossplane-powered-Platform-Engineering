@@ -210,7 +210,7 @@ II. __Install kubelogin on Windows.__
 choco install kubelogin
 ```
 
-| Kubectl Installation Logs:- |
+| Kubelogin Installation Logs:- |
 | --------- |
 
 ```
